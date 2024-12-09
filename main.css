@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    background-color: black;
+    min-width: 320px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color:black;
+}
+
+a {
+    color: #555;
+}
+
+a:hover {
+    color: #111111;    
+}
+
+.nav-link {
+    font-weight: 500;
+}
