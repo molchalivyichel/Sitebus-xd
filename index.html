@@ -3,65 +3,118 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <!-- Setup bootstrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Автовокзал Тамбов</title>
     
-    <!-- Setup fonts from google fonts-->
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Google jetbrains mono font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  
-    <!-- MY style css -->
-    <link href="main.css" rel="stylesheet" type="text/css">
-    
   </head>
+
   <body>
 
-    <section>
+    <!-- Logotype -->
+    <div class="container container-header">
+      <div class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="" width="58" height="58">
+          <div class="text">
+            <div><span class="first-letter">А</span>ВТОВОКЗАЛ</div>
+            <div><span id="first-letter-T">Т</span>АМБОВ</div>
+          </div>
+        </a>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <img src="menu_button.png" alt="Меню" width="62" height="62">
         </button>
-        <a class="navbar-brand" href="#">Автовокзал Тамбов</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Расписание автобусов</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Новости</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Справка</a>
-            </li>
-          </ul>
-        </div>   
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarSupportedContentShow">
           <ul class="navbar-nav ms-auto">
+
+            <!-- News -->
             <li class="nav-item">
-              <a class="nav-link active" href="#"><img src="src\img\icon.png" alt="..." width="32" height="32"></a>
+              <a class="nav-link" href="#">
+                <div class="text"><span class="first-letter">Н</span>ОВОСТИ</div>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#"><img src="src\img\icon.png" alt="..." width="32" height="32"></a>
+              <a class="nav-link" href="#">
+                <img src="news.png" alt="" width="58" height="58">
+              </a>
             </li>
-            
+
+            <!-- Services -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text"><span class="first-letter">У</span>СЛУГИ</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="services.png" alt="" width="58" height="58">
+              </a>
+            </li>
+
+            <!-- Schedule -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text"><span class="first-letter">Р</span>АСПИСАНИЕ</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="schedule.png" alt="" width="58" height="58">
+              </a>
+            </li>
+
           </ul>
-        </div>       
+        </div>
+
       </div>
-    </nav>
+    </div>
 
-    </section>
-    
+    <!-- Line -->
+    <div class="line">
+      <hr>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Main content -->
+    <div class="container">
+      <div class="text-main">
+        Билеты на автобус
+      </div>
+
+      <div class="btn-group search" role="group">
+        <input type="text" class="search-text search-input" placeholder="ОТКУДА">
+        <div class="line-search">
+          <hr>
+        </div>
+        <input type="text" class="search-text search-input" placeholder="КУДА">
+        <div class="line-search">
+          <hr>
+        </div>
+        <input type="date" class="search-text search-input" placeholder="ДД.ММ.ГГГГ">
+      </div>
+      <button class="search-button" type="button">
+        Поиск
+      </button>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
   </body>
+
 </html>

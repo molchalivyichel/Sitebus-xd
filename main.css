@@ -1,35 +1,140 @@
-html {
-    font-size: 16px;
+:root {
+    background-color: #C8AC84;
 }
 
 body {
-    font-family: 'JetBrains Mono', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #FFF;
-    background-color: black;
-    min-width: 320px;
-
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.navbar-brand {
-    font-size: 25px;
-    color:black;
+    background-color: #C8AC84;
 }
 
 a {
-    color: #555;
+    font-family: 'JetBrains Mono', monospace;
 }
 
-a:hover {
-    color: #111111;    
+.container {
+    max-width: 1000px;    
 }
 
-.nav-link {
-    font-weight: 500;
+.container-header {
+    margin-top: 10px;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link img{
+    margin-right: 25px;
+}
+
+.text {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.2;
+    color: #000000;
+    text-shadow: 2px 0 0 #0C7A5D;
+    font-size: 24px;
+}
+
+.text-main {
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.2;
+    color: #252525;
+    text-shadow: 3px 0 0 #0C7A5D;
+    font-size: 48px;
+    margin-top: 60px;
+}
+
+.first-letter {
+    font-size: 48px;
+    color: #1B908A;
+    font-weight: bold;
+    text-shadow: 2px 0 0 #000;
+}
+
+#first-letter-T {
+    font-size: 32px;
+    color: #1B908A;
+    font-weight: bold;
+    text-shadow: 2px 0 0 #000;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: #968163;
+    }
+
+    .navbar-collapse img {
+        display: none;
+    }
+}
+
+.line{      
+    height: 5px;
+    background-color: #794537;
+    color: #794537;
+    border: none;
+}
+
+.line-search{      
+    width: 100%;
+    background-color: #794537;
+    color: #794537;
+    border: none;
+}
+
+.search {
+    height: 125px;
+    box-shadow: 4px 4px 0 0 #7B6A51;
+    border:none;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.search-text{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    color: #252525;
+    text-shadow: 3px 0 0 #0C7A5D;
+}
+
+.search-button {
+    height: 125px;
+    background-color: #1B908A;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 4px 4px 0 0 #7B6A51;
+}
+
+.search-button-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 3px 0 0 #7B6A51;
+}
+
+.search-input {
+    color: none;
+    border:none;
+    background-color: none;
+    border-radius: 25px;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    border:none;
 }
