@@ -95,20 +95,31 @@
         Билеты на автобус
       </div>
 
-      <div class="btn-group search" role="group">
-        <input type="text" class="search-text search-input" placeholder="ОТКУДА">
-        <div class="line-search">
-          <hr>
+      <div class="search-container">
+        <div class="btn-group search" role="group">
+          <div class="search-input-group">
+            <input type="text" class="search-text search-input" placeholder="ОТКУДА">
+          </div>
+
+          <div class="search-divider"></div> 
+
+          <div class="search-input-group">
+            <input type="text" class="search-text search-input" placeholder="КУДА">
+          </div>
+          
+          <div class="search-divider"></div> 
+
+          <div class="search-input-group">
+            <input type="date" class="search-text search-input" placeholder="ДД.ММ.ГГГГ">
+          </div>
         </div>
-        <input type="text" class="search-text search-input" placeholder="КУДА">
-        <div class="line-search">
-          <hr>
-        </div>
-        <input type="date" class="search-text search-input" placeholder="ДД.ММ.ГГГГ">
+
+        <button class="search-button" type="button">
+          <div class="search-button-text">
+            Поиск
+          </div>
+        </button>
       </div>
-      <button class="search-button" type="button">
-        Поиск
-      </button>
     </div>
 
     <!-- Bootstrap JavaScript -->
