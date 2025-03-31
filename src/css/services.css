@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #16827C;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 96px;
+}
+
+.bold-text-services {
+    font-family: 'JetBrains Mono', monospace;
+    color: #16827C;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.text-services {
+    font-family: 'JetBrains Mono', monospace;
+    color: #00534F;
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.content {
+    position: relative;
+}
+
+.services-item {
+    display: flex;
+    justify-content: center;   
+}
+
+.background-img {
+    width: 100%;
+    height: auto;
+}
+
+/* mobile version */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .bold-text-services {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .text-services {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

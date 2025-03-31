@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link href="main.css" rel="stylesheet">
+    <link href="src/css/main.css" rel="stylesheet">
 
     <!-- Google jetbrains mono font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,14 @@
 
   <body>
 
+  <div class="wrapper">
+   <div class="sticky-top">
+
     <!-- Logotype -->
     <div class="container container-header">
       <div class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="logo.png" alt="" width="58" height="58">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/img/logo.png" alt="" width="58" height="58">
           <div class="text">
             <div><span class="first-letter">А</span>ВТОВОКЗАЛ</div>
             <div><span id="first-letter-T">Т</span>АМБОВ</div>
@@ -35,7 +38,7 @@
 
         <!-- Menu button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-          <img src="menu_button.png" alt="Меню" width="62" height="62">
+          <img src="src/img/menu_button.png" alt="Меню" width="62" height="62">
         </button>
 
         <!-- Menu -->
@@ -50,19 +53,19 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="news.png" alt="" width="58" height="58">
+                <img src="src/img/news.png" alt="" width="58" height="58">
               </a>
             </li>
 
             <!-- Services -->
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="services.html">
                 <div class="text"><span class="first-letter">У</span>СЛУГИ</div>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="services.png" alt="" width="58" height="58">
+                <img src="src/img/services.png" alt="" width="58" height="58">
               </a>
             </li>
 
@@ -74,7 +77,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="schedule.png" alt="" width="58" height="58">
+                <img src="src/img/schedule.png" alt="" width="58" height="58">
               </a>
             </li>
 
@@ -86,9 +89,12 @@
 
     <!-- Line -->
     <div class="line">
-      <hr>
+
+    </div>
     </div>
 
+    
+    <div class="content">
     <!-- Main content -->
     <div class="container">
       <div class="text-main">
@@ -131,13 +137,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="background.png" class="d-block w-100" alt="...">
+          <img src="src/img/background.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="background2.png" class="d-block w-100" alt="...">
+          <img src="src/img/background2.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="background.png" class="d-block w-100" alt="...">
+          <img src="src/img/background.png" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -148,32 +154,38 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Следующий</span>
       </button>
+      </div>
     </div>
 
     <!-- Footer -->
      <div class="footer">
       <div class="container footer-item">
-        <div class="text-footer">Контакты</div>
-        <div class="text-footer">Социальные сети</div>
-        <div class="text-footer">Помощь</div>
+        <div class="main-text-footer">Контакты</div>
+        <div class="main-text-footer">Социальные сети</div>
+        <div class="main-text-footer">Помощь</div>
       </div>
 
       <div class="container footer-item">
-        <div class="text-footer"><img src="phone.png" class="img-footer"> +74752535003</div>
-        <div><img src="telegram.png" class="img-footer-internet"> <img src="vk.png" class="img-footer-internet"> <img src="youtube.png" class="img-footer-internet"> </div>
-        <div class="text-footer">Справочная</div>
+        <div class="text-footer"><img src="src/img/phone.png" class="img-footer"> +74752535003</div>
+        <div>
+          <a href="youtube.com"><img src="src/img/telegram.png" class="img-footer-internet" href="https://telegram.org"></a>
+          <a href="google.com"><img src="src/img/vk.png" class="img-footer-internet" href="https://vk.com"></a>
+          <a href="vk.com"><img src="src/img/youtube.png" class="img-footer-internet" href="https://www.youtube.com"></a>
+        </div>
+        <a class="nav-link text-footer" href="#">Справочная</a>
       </div>
 
       <div class="container footer-item">
-        <div class="text-footer"><img src="email.png" class="img-footer"> почта.ру</div>
-        <div class="text-footer">Обратная связь</div>
+        <div class="text-footer"><img src="src/img/email.png" class="img-footer"> почта.ру</div>
+        <a class="nav-link text-footer" href="#">Обратная связь</a>
       </div>
 
       <div class="container footer-item">
-        <div class="text-footer"><img src="maps.png" class="img-footer"> г.Тамбов,ул.Мичуринская,д.48</div>
-        <div class="text-footer">О автовокзале</div>
-     </div>
-
+        <div class="text-footer"><img src="src/img/maps.png" class="img-footer"> г.Тамбов,ул.Мичуринская,д.48</div>
+        <a class="nav-link text-footer" href="#">О автовокзале</a>
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
