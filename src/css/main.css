@@ -6,6 +6,7 @@ html body {
     background-color: #C8AC84;
     height: 100%;
     margin: 0;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .wrapper {
@@ -14,13 +15,6 @@ html body {
     min-height: 100vh; 
 }
 
-.content {
-    flex: 1; 
-}
-
-a {
-    font-family: 'JetBrains Mono', monospace;
-}
 
 .container {
     max-width: 1000px;    
@@ -60,7 +54,6 @@ img.nav-link{
 }
 
 .text {
-    font-family: 'JetBrains Mono', monospace;
     line-height: 1.2;
     color: #000000;
     text-shadow: 2px 0 0 #0C7A5D;
@@ -68,7 +61,6 @@ img.nav-link{
 }
 
 .text-main {
-    font-family: 'JetBrains Mono', monospace;
     line-height: 1.2;
     color: #252525;
     text-shadow: 3px 0 0 #0C7A5D;
@@ -109,7 +101,6 @@ img.nav-link{
 }
 
 .search-text{
-    font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
     color: #252525;
     text-shadow: 2px 0 0 #0C7A5D;
@@ -134,7 +125,6 @@ img.nav-link{
 }
 
 .search-button-text {
-    font-family: 'JetBrains Mono', monospace;
     font-size: 36px;
     color: #ffffff;
     text-shadow: 4px 0 0 #000000;
@@ -217,7 +207,6 @@ img.nav-link{
 }
 
 .main-text-footer {
-    font-family: 'JetBrains Mono', monospace;
     line-height: 1.2;
     color: #ffffff;
     text-shadow: 2px 0 0 #0C7A5D;
@@ -226,7 +215,6 @@ img.nav-link{
 }
 
 .text-footer {
-    font-family: 'JetBrains Mono', monospace;
     line-height: 1.2;
     color: #ffffff;
     text-shadow: 2px 0 0 #0C7A5D;
@@ -316,6 +304,15 @@ img.nav-link{
 /* edit carousel */
 
 @media (max-width: 767px) {
+    .text {
+        font-size: 24px;
+    }
+    .search-button-text {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
     #carouselExampleIndicators {
         display: none;
     }
@@ -339,6 +336,15 @@ img.nav-link{
     .footer-item {
         justify-content:flex-end;
     }
+}
 
+/* Correct while site */
 
+@media (max-width: 898px) {
+    .text {
+        font-size: 18px;
+    }
+    .search-button-text {
+        font-size: 24px;
+    }
 }

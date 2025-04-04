@@ -1,5 +1,4 @@
 h1 {
-    font-family: 'JetBrains Mono', monospace;
     color: #16827C;
     text-align: center;
     margin-top: 20px;
@@ -7,7 +6,6 @@ h1 {
 }
 
 .bold-text-services {
-    font-family: 'JetBrains Mono', monospace;
     color: #16827C;
     margin-top: 10px;
     font-size: 40px;
@@ -15,7 +13,6 @@ h1 {
 }
 
 .text-services {
-    font-family: 'JetBrains Mono', monospace;
     color: #00534F;
     margin-top: 10px;
     font-size: 40px;
