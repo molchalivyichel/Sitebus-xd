@@ -68,6 +68,13 @@ img.nav-link{
     margin-top: 60px;
 }
 
+.text-href {
+    font-size: 40px;
+    color:#00534F;
+    margin-top: 50px;
+    text-decoration:none;
+}
+
 .first-letter {
     font-size: 48px;
     color: #1B908A;

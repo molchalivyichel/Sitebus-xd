@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автовокзал Тамбов</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="src/css/main.css" rel="stylesheet">
+    <link href="src/css/help.css" rel="stylesheet">
+
+    <!-- Google jetbrains mono font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <div class="wrapper">
+   <div class="sticky-top">
+
+    <!-- Logotype -->
+    <div class="container container-header">
+      <div class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/img/logo.png" alt="" width="58" height="58">
+          <div class="text">
+            <div><span class="first-letter">А</span>ВТОВОКЗАЛ</div>
+            <div><span id="first-letter-T">Т</span>АМБОВ</div>
+          </div>
+        </a>
+
+        <!-- Menu button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+          <img src="src/img/menu_button.png" alt="Меню" width="62" height="62">
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarSupportedContentShow">
+          <ul class="navbar-nav ms-auto">
+
+            <!-- News -->
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">
+                <div class="text"><span class="first-letter">Н</span>ОВОСТИ</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">
+                <img src="src/img/news.png" alt="" width="58" height="58">
+              </a>
+            </li>
+
+            <!-- Services -->
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">
+                <div class="text"><span class="first-letter">У</span>СЛУГИ</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">
+                <img src="src/img/services.png" alt="" width="58" height="58">
+              </a>
+            </li>
+
+            <!-- Schedule -->
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">
+                <div class="text"><span class="first-letter">Р</span>АСПИСАНИЕ</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">
+                <img src="src/img/schedule.png" alt="" width="58" height="58">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Line -->
+    <div class="line">
+
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="text-main" style="text-align: center;">
+            Справочная
+        </div>
+
+
+        <!-- Accordion -->
+      <div class="mt-5 mb-5">
+        <div class="accordion" id="routeAccordion">
+          <!-- Ячейка 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                Электронные билеты
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+
+                <div class="accordion" id="nestedAccordion1">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="nestedHeading1-1">
+                      <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#nestedCollapse1-1" aria-expanded="false" aria-controls="nestedCollapse1-1">
+                        Как приобрести электронный билет?
+                      </button>
+                    </h2>
+                    <div id="nestedCollapse1-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-1" data-bs-parent="#nestedAccordion1">
+                      <div class="accordion-body">
+                        <p>Для приобретения электронного билета выполните следующие действия:</p>
+                        <ol>
+                          <li>Выполните поиск рейса на главной странице сайта</li>
+                          <li>Выберите подходящий рейс из результатов поиска</li>
+                          <li>Заполните информацию о пассажире</li>
+                          <li>Выберите способ оплаты и оплатите билет</li>
+                          <li>Получите билет на указанный email</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="nestedHeading1-2">
+                      <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#nestedCollapse1-2" aria-expanded="false" aria-controls="nestedCollapse1-2">
+                        Как вернуть электронный билет?
+                      </button>
+                    </h2>
+                    <div id="nestedCollapse1-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading1-2" data-bs-parent="#nestedAccordion1">
+                      <div class="accordion-body">
+                        <p>Обратитесь в службу поддержки: <strong>почта.ру</strong></p>
+                        <p>Обратите внимание. Возврат билета за 24 часа со времени обращения не взимает сбор.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ячейка 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Правила провоза багажа
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+                <div class="accordion" id="nestedAccordion2">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="nestedHeading2-1">
+                        <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#nestedCollapse2-1" aria-expanded="false" aria-controls="nestedCollapse2-1">
+                                Права пассажира
+                        </button>
+                      </h2>
+                      <div id="nestedCollapse2-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-1" data-bs-parent="#nestedAccordion2">
+                        <div class="accordion-body">
+                            <strong>Пассажир имеет право провозить с собой в автобусах междугородных маршрутов:</strong>
+                            <li>1. Бесплатно – одно место ручной клади, длина, высота и ширина которого в сумме не должна превышать 120 см., в том числе мелких животных и птиц в клетках, одну пару лыж в чехле, детские санки, детскую коляску.</li>
+                            <li>2. За плату в багажном отделении транспортного средства багаж в количестве не более двух мест, длина, ширина и высота каждого из которых в сумме не превышают 180 см. Обеспечение целостности и сохранности ручной клади является обязанностью пассажира.</li>
+                            
+                            <p>ОПЛАТА БАГАЖА производится в кассах автовокзала.</p>
+                            <p>Погрузка и выгрузка багажа, перевозимого в багажных отделениях транспортных средств, осуществляется пассажиром.</p>
+                            <p>Багаж выдается лицу, предъявившему багажную квитанцию и багажную бирку. В случае утраты багажной квитанции или багажной бирки багаж может быть выдан лицу, которое докажет свое право на него, указав письменно точные признаки вещей, входящих в состав багажа.</p>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    
+  
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="nestedHeading2-2">
+                        <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#nestedCollapse2-2" aria-expanded="false" aria-controls="nestedCollapse2-2">
+                            Права перевозчика
+                        </button>
+                      </h2>
+                      <div id="nestedCollapse2-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-2" data-bs-parent="#nestedAccordion2">
+                        <div class="accordion-body">
+                            <li>1 .Устанавливать нормы перевозки багажа, провоза ручной клади, в том числе бесплатно, большего размера или в большем количестве.</li>
+                            <li>2. Отказать пассажиру в принятии багажа для перевозки, провозе ручной клади, если свойства или упаковка вещей, входящих в состав багажа, ручной клади, не отвечают требованиям, установленным правилами перевозок пассажиров.</li>
+                            <li>3. Отказать пассажиру в провозе ручной клади, если ее размещение в транспортном средстве будет препятствовать входу пассажиров в транспортное средство, выходу пассажиров из транспортного средства.</li>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="nestedHeading2-3">
+                          <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                  data-bs-target="#nestedCollapse2-3" aria-expanded="false" aria-controls="nestedCollapse2-3">
+                                Категорически запрещается
+                          </button>
+                        </h2>
+                        <div id="nestedCollapse2-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-3" data-bs-parent="#nestedAccordion2">
+                          <div class="accordion-body">
+                              <li>Перевозить багаж, если его не сопровождает владелец;</li>
+                              <li>Брать у граждан коробки, сумки, бандероли, любые другие предметы для перевозки в автобусе, в целях передачи их в других городах.</li>
+                              <li>Размещать ручную кладь на местах, предназначенных для сидения, в проходе между сидениями, возле входа или выхода из транспортного средства, в том числе аварийного.</li>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="nestedHeading2-4">
+                          <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                  data-bs-target="#nestedCollapse2-4" aria-expanded="false" aria-controls="nestedCollapse2-4">
+                                Перечень запрещенных к провозу веществ и предметов
+                          </button>
+                        </h2>
+                        <div id="nestedCollapse2-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading2-4" data-bs-parent="#nestedAccordion2">
+                          <div class="accordion-body">
+                            <p>Приказ Министерства транспорта РФ от 23 июля 2015 г. № 227 «Об утверждении Правил проведения досмотра, дополнительного досмотра, повторного досмотра в целях обеспечения транспортной безопасности»</p>
+                              <li>взрывчатые вещества и оружие (в том числе фейерверки, сигнальные ракеты и т.д.);</li>
+                              <li>ядовитые и отравляющие вещества (в том числе материалы с живыми вирусами и т.д.);</li>
+                              <li>легковоспламеняющиеся жидкости (краски, растворители и т.д. );</li>
+                              <li>воспламеняющиеся твердые вещества;</li>
+                              <li>радиоактивные материалы и вещества;</li>
+                              <li>сжатые и сжиженные газы (газы для газовых горелок, жидкий азот и т.д.);</li>
+                              <li>окисляющие вещества и органические перекиси;</li>
+                              <li>токсичные вещества (в том числе средства от насекомых, гербициды и т.д.)</li>
+                              <li>едкие и коррозирующие вещества.</li>                        
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ячейка 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Ответы на наиболее частые вопросы
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+                <li>Условия посадки на рейс</li>
+                <p>При посадке в автобус каждый пассажир обязан предъявить документ, удостоверяющий личность, на основании которого оформлен электронный билет. Посадка на рейс осуществляется при предъявлении оригиналов документов, удостоверяющих личность, всех пассажиров.</p>
+                <li>Есть ли возможность распечатать бланк электронного билета в кассе автовокзала?</li>
+                <p>В автовокзале имеется возможность распечатки дубликата билета. Стоимость услуги - 50 рублей.</p>
+                <li>Нужно ли с приобретенным электронным билетом на автовокзале подходить к кассе?</li>
+                <p>Документ, удостоверяющий личность, на основании которого оформлен электронный билет, предъявляется контролеру при посадке, к кассе подходить не нужно.</p>
+                <li>Можно ли узнать расписание на больше, чем 14 дней?</li>
+                <p>Точное расписание формируется максимум на ближайшие 14 дней.</p>
+                <li>У вас на сайте написано, что рейсов на сегодня нет. Скажите, пожалуйста, на самом деле они есть?</li>
+                <p>На сайте есть вся информация о маршрутах, времени следования и автобусах. Она не отличается от информации на самом автовокзале. Если появилось сообщение "Рейсов нет", то это значит, что или рейсов на выбранную дату нет вообще, или на существующие рейсы уже все билеты проданы?</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ячейка 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Отчетность за командировку
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+                <p>Согласно Письму Минфина России от 05.02.2010 № 03-03-05/1 при приобретении работником билета, оформленного в бездокументарной форме, - электронной маршрутной квитанции электронного пассажирского билета (электронного билета) для поездок на территории Российской Федерации и за рубеж подтверждающими документами являются в части:</p>
+                <p>а) произведенных расходов по оплате:</p>
+<li>чек контрольно-кассовой техники;</li>
+<li>слипы, чеки электронных терминалов при проведении операций с использованием банковской карты, держателем которой является работник;</li>
+<li>подтверждение кредитным учреждением, в котором открыт работнику банковский счет, предусматривающий совершение операций с использованием банковской карты, проведенной операции по оплате электронного авиабилета;</li>
+<li>или другой документ, подтверждающий произведенную оплату перевозки, оформленный на утвержденном бланке строгой отчетности;</li>
+<p></p>
+<p>б) факта произведенной перевозки:</p>
+<li>распечатка электронного документа;</li>
+<li>электронная маршрутная квитанция электронного пассажирского билета (электронного билета) на бумажном носителе с одновременным представлением посадочного талона, подтверждающего поездку подотчетного лица по указанному в электронном билете маршруту.</li>
+<p></p>
+<p>Ранее в Письме Министерства Финансов РФ от 17.07.2007 г. № 03-03-06/4/99 указывалось, что для признания расходов в целях налогообложения прибыли может использоваться распечатка электронного документа (маршрутная квитанция) на бумажном носителе. Маршрутная квитанция (электронный билет) доступна для загрузки с нашего сайта в разделе "Мои билеты" после получения подтверждения об оплате. Непосредственно перед посадкой необходимо обратиться в справочное окно автовокзала и попросить поставить на маршрутной квитанции печать.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ячейка 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                Транспортная безопасность
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+
+                <div class="accordion" id="nestedAccordion5">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="nestedHeading5-1">
+                        <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#nestedCollapse5-1" aria-expanded="false" aria-controls="nestedCollapse5-1">
+                                Общая информация
+                        </button>
+                      </h2>
+                      <div id="nestedCollapse5-1" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-1" data-bs-parent="#nestedAccordion5">
+                        <div class="accordion-body">
+                          <p>Безопасность пассажиров на автовокзале обеспечивается в полном объеме, определенным федеральным законом Российской Федерации от 9 февраля 2007 г. № 16-ФЗ «О транспортной безопасности» (с изменениями и дополнениями). На автовокзале установлено основное ограждение по периметру, допуск в зону транспортной безопасности осуществляется по пропускам, где осуществляется досмотр автотранспорта, как по прибытию, так и перед отправлением в рейс.</p>
+                          <p>Пассажиры проходят в здание автовокзала через арочный металлодетектор, осуществляется досмотр ручной клади и багажа, в зале ожидания и на платформах установлены системы видеонаблюдения и управления контроля доступа. Здание автовокзала оборудовано современной системой пожаротушения и средствами эвакуации на случай возникновения чрезвычайной ситуации. Продажа билетов производится по документам, удостоверяющим личность, и имеющих информативную защиту.</p>
+                          <p>Дежурят сотрудники МВД, которые всегда готовы прийти на помощь. Также производится информирование по системе оповещения о действиях при обнаружении подозрительных или бесхозных предметов, соблюдении правил пожарной безопасности.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="nestedHeading5-2">
+                        <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#nestedCollapse5-2" aria-expanded="false" aria-controls="nestedCollapse5-2">
+                                Требования к физическим лицам
+                        </button>
+                      </h2>
+                      <div id="nestedCollapse5-2" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-2" data-bs-parent="#nestedAccordion5">
+                        <div class="accordion-body">
+                          <p>Требования по соблюдению транспортной безопасности для физических лиц, следующих либо находящихся на объектах транспортной инфраструктуры или транспортных средствах, по видам транспорта физические лица обязаны:</p>
+                          <li>осуществлять проход в зону транспортной безопасности в соответствии с установленными правилами проведения досмотра, дополнительного досмотра и повторного досмотра в целях обеспечения транспортной безопасности, включающими перечень необходимых документов;</li>
+                          <li>выполнять требования сил обеспечения транспортной безопасности;</li>
+                          <li>информировать силы обеспечения транспортной безопасности о событиях или действиях, создающих угрозу транспортной безопасности.</li>
+                          <p></p>
+                          <p>Физическим лицам запрещается:</p>
+                          <li>проносить (провозить) в зону транспортной безопасности предметы и вещества, запрещенные или ограниченные для перемещения на объекте транспортной инфраструктуры и (или) транспортном средстве; препятствовать функционированию технических средств обеспечения транспортной безопасности, расположенных в зоне транспортной безопасности;</li>
+                          <li>принимать материальные объекты для их перевозки на транспортном средстве без уведомления сил обеспечения транспортной безопасности и прохождения процедуры досмотра в случаях, предусмотренных требованиями по обеспечению транспортной безопасности, установленными в соответствии со статьей 8 Федерального закона «О транспортной безопасности»;</li>
+                          <li>совершать действия, создающие препятствия (в том числе с использованием транспортных и других технических средств) функционированию транспортного средства или ограничивающие функционирование объектов транспортной инфраструктуры, включая распространение заведомо ложных сообщений о событиях или действиях, создающих угрозу транспортной безопасности объекта транспортной инфраструктуры или транспортного</li>
+                          <p>средства, а также действия, направленные на повреждение (хищение) элементов объекта транспортной инфраструктуры или транспортного средства, которые могут привести их в негодное для эксплуатации состояние либо состояние, угрожающее жизни или здоровью персонала субъекта транспортной инфраструктуры или подразделения транспортной безопасности, пассажиров и других лиц;</p>
+                          <li>передавать документы сторонним лицам, предоставляющие право прохождения процедуры досмотра в особом порядке, для прохода (проезда) в зону транспортной безопасности;</li>
+                          <li>осуществлять проход (проезд) в зону транспортной безопасности объекта транспортной инфраструктуры или транспортного средства вне (в обход) установленных субъектом транспортной инфраструктуры или перевозчиком проходов (проездов);</li>
+                          <li>предпринимать действия, имитирующие подготовку к совершению либо совершение актов незаконного вмешательства в деятельность объекта транспортной инфраструктуры или транспортного средства;</li>
+                          <li>использовать пиротехнические изделия без разрешения лица, ответственного за обеспечение транспортной безопасности на объекте транспортной инфраструктуры или транспортном средстве. 2. Права и обязанности пассажира Порядок проведение досмотра 16 ФЗ ст 12.2</li>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="nestedHeading5-3">
+                          <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                  data-bs-target="#nestedCollapse5-3" aria-expanded="false" aria-controls="nestedCollapse5-3">
+                                  Правила провоза багажа
+                          </button>
+                        </h2>
+                        <div id="nestedCollapse5-3" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-3" data-bs-parent="#nestedAccordion5">
+                          <div class="accordion-body">
+                            <p>На маршрутах регулярных межрайонных (междугородных внутриобластных), автомобильных перевозок пассажиров и багажа в салоне автобуса пассажирам разрешается перевозить бесплатно одно место ручной клади размером не более 60x40x20 см и весом не более 20 кг , а также мелких животных и птиц в клетках. В иных случаях, багаж оплачивается отдельно</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="nestedHeading5-4">
+                          <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                                  data-bs-target="#nestedCollapse5-4" aria-expanded="false" aria-controls="nestedCollapse5-4">
+                                  Сообщение ложных сведений об актах терроризма
+                          </button>
+                        </h2>
+                        <div id="nestedCollapse5-4" class="accordion-collapse collapse" aria-labelledby="nestedHeading5-4" data-bs-parent="#nestedAccordion5">
+                          <div class="accordion-body">
+                            <p>Уголовный кодекс Российской Федерации от 13 июня 1996 г. N 63-ФЗ (УК РФ) (с изменениями и дополнениями) Особенная часть (ст.ст. 105-360) Раздел IX. Преступления против общественной безопасности и общественного порядка (ст.ст. 205-274) Глава 24. Преступления против общественной безопасности (ст.ст. 205-227) Статья 207. Заведомо ложное сообщение об акте терроризма</p>
+                            <li>Заведомо ложное сообщение о готовящихся взрыве, поджоге или иных действиях, создающих опасность гибели людей, причинения значительного имущественного ущерба либо наступления иных общественно опасных последствий, совершенное из хулиганских побуждений, -наказывается штрафом в размере от двухсот тысяч до пятисот тысяч рублей или в размере заработной платы или иного дохода осужденного за период от одного года до восемнадцати месяцев, либо ограничением свободы на срок до трех лет, либо принудительными работами на срок от двух до трех лет.</li>
+                            <li>Деяние, предусмотренное частью первой настоящей статьи, совершенное в отношении объектов социальной инфраструктуры либо повлекшее причинение крупного ущерба, -наказывается штрафом в размере от пятисот тысяч до семисот тысяч рублей или в размере заработной платы или иного дохода осужденного за период от одного года до двух лет либо лишением свободы на срок от трех до пяти лет.</li>
+                            <li>Заведомо ложное сообщение о готовящихся взрыве, поджоге или иных действиях, создающих опасность гибели людей, причинения значительного имущественного ущерба либо наступления иных общественно опасных последствий в целях дестабилизации деятельности органов власти, -наказывается штрафом в размере от семисот тысяч до одного миллиона рублей или в размере заработной платы или иного дохода осужденного за период от одного года до трех лет либо лишением свободы на срок от шести до восьми лет.</li>
+                            <li>Деяния, предусмотренные частями первой, второй или третьей настоящей статьи, повлекшие по неосторожности смерть человека или иные тяжкие последствия, -наказываются штрафом в размере от одного миллиона пятисот тысяч до двух миллионов рублей или в размере заработной платы или иного дохода осужденного за период от двух до трех лет либо лишением свободы на срок от восьми до десяти лет.</li>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Ячейка 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button class="accordion-button collapsed text-button" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      Усиление антитеррористической защищенности объектов транспортной инфраструктуры и транспортных средств
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#routeAccordion">
+              <div class="accordion-body">
+                <p>В настоящее время на общественном транспорте г. Тамбова проводятся мероприятия, направленные на усиление антитеррористической защищенности объектов транспортной инфраструктуры и транспортных средств, включающие в себя:</p>
+                <li>усиление контроля во время досмотровых мероприятий на автостанциях с использованием специальных технических средств;</li>
+                <li>информирование пассажиров по громкоговорящей связи о правилах поведения в случае обнаружения бесхозных вещей, подозрительных предметов;</li>
+                <li>проведение дополнительных инструктажей кондукторов и дежурных смен автовокзала.</li>
+
+                <p></p>
+                <p>Въезд на территорию парков и автовокзалов контролируется техническими средствами защиты:</p>
+                <li>автоматический шлагбаум, «Система контроля и управления доступом» (СКУД). В целях контроля за обеспечением пропускного режима. у въездных ворот установлены круглосуточные посты.</li>
+
+                <p></p>
+                <p>На пунктах отправления и прибытия регулярных междугородних и международных автобусных маршрутов усилена работа по обеспечению безопасности.</p>
+                <li>Назначены ответственные лица за обеспечение транспортной безопасности на автовокзале, установлены кнопки экстренного вызова полиции с выводом тревожного сигнала на пункт централизованного наблюдения территориального подразделения вневедомственной охраны, установлены камеры видеонаблюдения.</li>
+
+                <p></p>
+                <p>Перечень запрещенных к провозу веществ и предметов</p>
+                <p>Приказ Министерства транспорта РФ от 23 июля 2015 г. № 227 «Об утверждении Правил проведения досмотра, дополнительного досмотра, повторного досмотра в целях обеспечения транспортной безопасности»</p>
+                <li>взрывчатые вещества и оружие (в том числе фейерверки, сигнальные ракеты и т.д.);</li>
+                              <li>ядовитые и отравляющие вещества (в том числе материалы с живыми вирусами и т.д.);</li>
+                              <li>легковоспламеняющиеся жидкости (краски, растворители и т.д. );</li>
+                              <li>воспламеняющиеся твердые вещества;</li>
+                              <li>радиоактивные материалы и вещества;</li>
+                              <li>сжатые и сжиженные газы (газы для газовых горелок, жидкий азот и т.д.);</li>
+                              <li>окисляющие вещества и органические перекиси;</li>
+                              <li>токсичные вещества (в том числе средства от насекомых, гербициды и т.д.)</li>
+                              <li>едкие и коррозирующие вещества.</li>   
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+          
+    </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container footer-item">
+      <div class="main-text-footer">Контакты</div>
+      <div class="main-text-footer">Социальные сети</div>
+      <div class="main-text-footer">Помощь</div>
+    </div>
+
+    <div class="container footer-item">
+      <div class="text-footer"><img src="src/img/phone.png" class="img-footer"> +74752535003</div>
+      <div>
+        <a href="youtube.com"><img src="src/img/telegram.png" class="img-footer-internet" href="https://telegram.org"></a>
+        <a href="google.com"><img src="src/img/vk.png" class="img-footer-internet" href="https://vk.com"></a>
+        <a href="vk.com"><img src="src/img/youtube.png" class="img-footer-internet" href="https://www.youtube.com"></a>
+      </div>
+      <a class="nav-link text-footer" href="help.html">Справочная</a>
+    </div>
+
+    <div class="container footer-item">
+      <div class="text-footer"><img src="src/img/email.png" class="img-footer"> почта.ру</div>
+      <a class="nav-link text-footer" href="#">Обратная связь</a>
+    </div>
+
+    <div class="container footer-item">
+      <div class="text-footer"><img src="src/img/maps.png" class="img-footer"> г.Тамбов,ул.Мичуринская,д.48</div>
+      <a class="nav-link text-footer" href="about_bus_station.html">О автовокзале</a>
+    </div>
+  </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
